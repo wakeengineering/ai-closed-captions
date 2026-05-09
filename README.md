@@ -14,7 +14,7 @@ The main pipeline (`transcribe_faster_whisper.sh`) includes the following capabi
 
 - **API Context Integration**: Leverages external APIs to gather contextual information about the video content, improving transcription accuracy.
 - **Sign/Song Merging**: Automatically detects and merges signs, songs, and other non-dialogue elements into the subtitle track.
-- **Existing Subtitle Detection and Merging**: Identifies pre-existing closed caption tracks in the video file and merges them with the new AI-generated subtitles for comprehensive coverage.
+- **Existing Subtitle Detection and Merging**: Identifies pre-existing closed caption tracks in the video file. If found, AI generation of new tracks is skipped, and existing tracks are merged with any detected signs/songs tracks.
 
 ## Usage
 
@@ -53,4 +53,4 @@ This is a personal project, but feel free to fork and experiment. Pull requests 
 
 ## License
 
-[Add your preferred license here, e.g., MIT]
+MIT License - Intended for personal, non-commercial use. See LICENSE file for details.
